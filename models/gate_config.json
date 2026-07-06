@@ -1,0 +1,21 @@
+{
+  "method": "msp",
+  "threshold": 0.396139919757843,
+  "class_names": [
+    "dew",
+    "fogsmog",
+    "frost",
+    "glaze",
+    "hail",
+    "lightning",
+    "rain",
+    "rainbow",
+    "rime",
+    "sandstorm",
+    "snow"
+  ],
+  "auroc_easy": 0.9740666791251522,
+  "fpr95_easy": 0.18430034129692832,
+  "auroc_hard": 0.9180303965966791,
+  "fpr95_hard": 0.45535714285714285
+}
