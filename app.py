@@ -37,14 +37,14 @@ def predict(pil_image):
 
     if msp < threshold:
         msg = (
-            f"Not a weather image — gate score {msp:.3f} < threshold {threshold:.3f}.\n"
+            f"Not a weather image - gate score {msp:.3f} < threshold {threshold:.3f}.\n"
             f"Try a photo where sky, precipitation, or frost is clearly visible."
         )
         return {}, msg
 
     top3 = {class_names[i]: float(probs[i]) for i in np.argsort(-probs)[:3]}
     verdict = (
-        f"Weather detected — gate score {msp:.3f} >= threshold {threshold:.3f}.\n"
+        f"Weather detected - gate score {msp:.3f} >= threshold {threshold:.3f}.\n"
         f"Top-1: {class_names[int(np.argmax(probs))]}"
     )
     return top3, verdict
